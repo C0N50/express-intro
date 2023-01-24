@@ -1,0 +1,25 @@
+img {
+    border-radius: 50px;;
+    width:450px;
+    height: 450px;
+    gap: 10px;
+}
+
+h1 {
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 5em;
+    color: plum;    
+}
+
+body {
+    background-color: aquamarine;
+}
+
+
+.grid-1 {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+  
+  }

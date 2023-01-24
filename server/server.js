@@ -10,6 +10,23 @@ console.log('What is my purpose? 🤖');
 
 const PORT = 8000;
 
+
+//specific data to request
+let utensils = [
+    'spork',
+    'sknife',
+    'knork'
+];
+
+
+//"An Endpoint"
+//GET http://localhost:800/utensils
+// this code will run
+app.get('/utensils', (req, res) => {
+    console.log('somone needs utensils');
+    res.send(utensils);
+});
+
 app.listen(PORT, () => {
     //~onReady()
     console.log('My purpose is to internet! 🤖');
