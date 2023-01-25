@@ -14,8 +14,8 @@ const PORT = 8000;
 //specific data to request
 let kitties = [
     'Xiu Xiu',
-    'Pala',
-    'Zeke'
+    'Zeke',
+    'Pala'
 ];
 
 
