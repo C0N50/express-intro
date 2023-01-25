@@ -22,9 +22,6 @@ let kitties = [
     'Pala'
 ];
 
-const quotes = [];
-const ratings = [];
-
 
 //"An Endpoint"
 //GET http://localhost:800/utensils
@@ -44,14 +41,10 @@ app.listen(PORT, () => {
 app.post('/', (req, res) => {
     console.log('Receiving a POST request!', req.body);
 
-    const quote = req.body.quote;
-    const rating = req.body.rating;
-
-
-    quotes.push([quote, rating]);
-
-    console.log('My quotes and ratings:', quotes);
+    const name = req.body.name;
+ 
+    kitties.push(name);
+    console.log('New Kitty Name:', name);
 
     res.sendStatus(201); //code says "created"
-
 });

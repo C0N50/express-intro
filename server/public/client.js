@@ -8,6 +8,9 @@ function onReady () {
         console.log("I am ready for literally anything!");
         fetchKitties();
         console.log(kittyArray);
+
+        render();
+
 }
 
 
@@ -20,7 +23,6 @@ function fetchKitties() {
         kittyArray = response; 
         render();
     })
-    console.log('Faster than cats!');
 }
 
 function render() {
