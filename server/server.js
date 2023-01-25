@@ -12,19 +12,19 @@ const PORT = 8000;
 
 
 //specific data to request
-let utensils = [
-    'spork',
-    'sknife',
-    'knork'
+let kitties = [
+    'Xiu Xiu',
+    'Pala',
+    'Zeke'
 ];
 
 
 //"An Endpoint"
 //GET http://localhost:800/utensils
 // this code will run
-app.get('/utensils', (req, res) => {
-    console.log('somone needs utensils');
-    res.send(utensils);
+app.get('/kitties', (req, res) => {
+    console.log('somone needs kitties');
+    res.send(kitties);
 });
 
 app.listen(PORT, () => {

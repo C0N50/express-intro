@@ -3,6 +3,8 @@ img {
     width:450px;
     height: 450px;
     gap: 10px;
+    border: 7px dotted;
+    border-color: plum;
 }
 
 h1 {
