@@ -23,7 +23,7 @@ let kitties = [
 //GET http://localhost:800/utensils
 // this code will run
 app.get('/kitties', (req, res) => {
-    console.log('somone needs kitties');
+    console.log('Kitties need names!');
     res.send(kitties);
 });
 

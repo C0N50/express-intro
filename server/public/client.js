@@ -6,9 +6,8 @@ $(document).ready(onReady);
 
 function onReady () {
         console.log("I am ready for literally anything!");
-
         fetchKitties();
-        render();
+        console.log(kittyArray);
 }
 
 
@@ -28,7 +27,7 @@ function render() {
     $('.kitty-names').empty();
     for (let kitty of kittyArray) {        
         $('.kitty-names').append(
-        `<p>${kitty}</p>`
+        `<div class = "name-item">${kitty}</div>`
         );
     }
 }

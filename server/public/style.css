@@ -36,4 +36,5 @@ body {
     gap: 2%;
     grid-template-rows: auto auto auto;
     color: plum;
+    padding-top: 5px;
   }
